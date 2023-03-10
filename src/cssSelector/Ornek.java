@@ -5,7 +5,7 @@ import Utlity.Utlity.MyFunc;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
+import static org.junit.Assert.assertTrue;
 public class Ornek extends BaseDriver {
     @Test
     public void Test() {
@@ -20,7 +20,7 @@ public class Ornek extends BaseDriver {
 
         MyFunc.Bekle(2);
         WebElement male = driver.findElement(By.cssSelector("[value = 'M']"));
-        regista.click();
+        male.click();
 
 
         MyFunc.Bekle(2);
@@ -29,35 +29,35 @@ public class Ornek extends BaseDriver {
 
         MyFunc.Bekle(2);
         WebElement lastname = driver.findElement(By.cssSelector("[id='LastName']"));
-        firstname.sendKeys("durmaz");
+        lastname.sendKeys("durmaz");
 
 
         MyFunc.Bekle(2);
-        WebElement day = driver.findElement(By.cssSelector("[class='valid']>[value='18']"));
+        WebElement day = driver.findElement(By.cssSelector("[value='18']"));
         day.click();
 
 
 
         MyFunc.Bekle(2);
-        WebElement mou = driver.findElement(By.cssSelector("[class='valid']>[value='6']"));
+        WebElement mou = driver.findElement(By.cssSelector("[value='6']"));
         mou.click();
 
 
 
         MyFunc.Bekle(2);
-        WebElement years = driver.findElement(By.cssSelector("[class='valid']>[value='1995']"));
+        WebElement years = driver.findElement(By.cssSelector("[value='1995']"));
         years.click();
 
 
         MyFunc.Bekle(2);
         WebElement email = driver.findElement(By.cssSelector("[id='Email']"));
-        email.sendKeys("cdrd@hotmail.com");
+        email.sendKeys("cdrhd@hotmail.com");
 
 
 
         MyFunc.Bekle(2);
         WebElement comname = driver.findElement(By.cssSelector("[id='Company']"));
-        email.sendKeys("TeknoStudy");
+        comname.sendKeys("TeknoStudy");
 
 
         MyFunc.Bekle(2);
@@ -92,7 +92,7 @@ public class Ornek extends BaseDriver {
 
         MyFunc.Bekle(2);
         WebElement email2 = driver.findElement(By.cssSelector("[class='email']"));
-        email2.sendKeys("cdrd@hotmail.com");
+        email2.sendKeys("cdrhd@hotmail.com");
 
 
         MyFunc.Bekle(2);
@@ -103,6 +103,17 @@ public class Ornek extends BaseDriver {
         MyFunc.Bekle(2);
         WebElement loggin = driver.findElement(By.cssSelector("[class='button-1 login-button']"));
         loggin.click();
+
+
+
+
+        WebElement logout = driver.findElement(By.cssSelector("[href='/logout']"));
+        assertTrue(logout.isEnabled());
+
+
+
+        BekleKapat();
+
 
 
 
