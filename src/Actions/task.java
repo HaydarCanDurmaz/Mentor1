@@ -23,7 +23,23 @@ public class task extends BaseDriver {
 
 
 
-        BekleKapat();
-    }
 
-}
+    } @Test
+    public void senaryo2(){
+        driver.get("https://www.browserstack.com/");
+
+        Actions aksiyonlar=new Actions(driver);
+        WebElement live= driver.findElement(By.xpath("//a[@class='product-cards-wrapper--click--hoverclick product-card-live']"));
+        aksiyonlar.moveToElement(live).click().build().perform();
+
+
+
+
+
+
+
+
+
+        BekleKapat();
+
+}}
