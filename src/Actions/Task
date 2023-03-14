@@ -1,3 +1,19 @@
-1. perform Click Action on the web elemen
+1. perform Click Action on the web element
 Test Scnario:
-Browserstack hom paage sayfasına gidin ve Get
+Browserstack hom paage sayfasına gidin ve Get Started yapın
+
+2, Perform Mouse Hower Action on the web element
+Test Scenario;
+Mouse ile live Tab üzerine Hower yapın ve App  Automap clickleyim
+
+3, Perform Mouse Hower Action on the web element
+Test Scenario;
+Freee trial butonun üstüne Double click yapın
+
+
+4, Perform Mouse Hower Action on the web element
+Test Scenario;
+DragandDrop
+https://www.globalsqa.com/demo-site/draganddrop/site
+resimleri yandaki alana götürüp bırakınız
+
